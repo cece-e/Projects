@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    height: 200vh;
+    background-image: url("https://wallpaperaccess.com/full/8575316.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header{
+    background-color: white;
+    padding: 150px;
+}
+h1{
+    color: #000;
+}
