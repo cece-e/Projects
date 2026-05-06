@@ -1,17 +1,90 @@
-body {
+/* RESET */
+* {
     margin: 0;
-    height: 200vh;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
     background-image: url("https://wallpaperaccess.com/full/8575316.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: #333;
 }
 
-header{
-    background-color: white;
-    padding: 150px;
+/* CONTAINER */
+body {
+    display: flex;
+    justify-content: center;
 }
-h1{
+
+main {
+    width: 80%;
+    max-width: 900px;
+}
+
+/* HEADER */
+header {
+    background: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+/* NAME */
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* PROFILE IMAGE */
+header img {
+    border-radius: 50%;
+    margin-top: 15px;
+    border: 4px solid #ddd;
+}
+
+/* SECTIONS */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* HEADINGS */
+h1 {
     font-family: 'Courier New', Courier, monospace;
-    color: #000;
+}
+
+h2, h3, h4 {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* PARAGRAPHS */
+p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
 }
