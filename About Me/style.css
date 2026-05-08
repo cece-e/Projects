@@ -1,17 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
 body {
     margin: 0;
     height: 200vh;
-    background-image: url("https://wallpaperaccess.com/full/8575316.jpg");
+    background:
+    linear-gradient(
+    rgba(255, 252, 254, 0.515),
+    rgba(131, 24, 174, 0.519)
+    ),url("https://wallpaperaccess.com/full/8575316.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
+.container{
+width: 95%;4
+max-width: 1200px;
+background: rgb(255, 255, 255);
+margin: 20px auto;
+padding: 15px;
+border-radius: 20px;
+outline: 5px solid #9955a2;
+box-shadow: 0 0 25px rgba(131, 24, 174, 0.519);
+
+}
 
 header{
+    width: max-content 100;
     background-color: white;
-    padding: 150px;
+    padding: 100px;
 }
+
 h1{
-    font-family: 'Courier New', Courier, monospace;
-    color: #000;
+    text-align: left;
+    font-family:'Fredoka', sans-serif;
+    font-size: 50px;
+}
+
+
+
+.glow-text{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow:
+    0 0 20px #9955a2;
+}
+
+.kuromi{
+    background-blend-mode:overlay;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    width: 220px;
+    z-index: 1000;
+    filter: drop-shadow(0 0 15px rgba(30, 28, 28, 0.5));
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    5%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+p{
+    text-align: center;
+    font-family:'Fredoka', sans-serif;
+    font-size: 30px;
 }
