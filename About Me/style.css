@@ -13,21 +13,21 @@ body {
     background-attachment: fixed;
 }
 .container{
-width: 95%;
-max-width: 1200px;
-background: rgb(255, 255, 255);
-margin: 20px auto;
-padding: 15px;
-border-radius: 20px;
-outline: 5px solid #9955a2;
-box-shadow: 0 0 25px rgba(131, 24, 174, 0.519);
-
+    width: 95%;
+    background: rgb(255, 255, 255);
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 20px;
+    outline: 5px solid #9955a2;
+    box-shadow: 0 0 25px rgba(131, 24, 174, 0.519);
+    box-sizing: border-box;
 }
 
 header{
-    width: max-content 100;
+    width: 100%;
     background-color: white;
     padding: 100px;
+    box-sizing: border-box;
 }
 
 h1{
