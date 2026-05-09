@@ -39,10 +39,7 @@ h1{
 h2{
     font-family: 'Fredoka', sans-serif;
     display: flex;
-
 }
-
-
 
 .glow-text{
     color: rgb(0, 0, 0);
@@ -50,6 +47,55 @@ h2{
     font-weight: bold;
     text-shadow:
     0 0 20px #ffd4f1;
+}
+
+.leftPanel{
+    width:100%;
+    max-width: 500px;
+
+    background:
+    linear-gradient(
+        to top,
+        #fdb3dd,
+        #ffd0ec
+    );
+    font-family: "Fredoka", sans-serif;
+    text-shadow: #ffffff;
+    margin: 30px auto;
+    padding:40px;
+    border-radius: 25px;
+    align-items:left;
+    color : rgb(0, 0, 0);
+ 
+}
+
+.leftPanel:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+}
+
+
+.leftPanel ul{
+    padding-left: 20px;
+}
+
+.leftPanel li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+p{
+    text-align: center;
+    font-family:'Fredoka', sans-serif;
+    font-size: 30px;
+}
+
+.cinna{
+    margin: 10px auto;
+    width: 350px;
+    filter:
+    drop-shadow(0 0 15px rgba(30,28,28,0.4));
 }
 
 .kuromi{
@@ -78,53 +124,27 @@ h2{
     }
 }
 
-.leftPanel{
-    width:100%;
-    max-width: 500px;
+.gif{
+    margin: 20px auto;
+    width: 400px;
+    border-radius: 20px;
+    border: 8px solid white;
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.4);
 
-    background:
-    linear-gradient(
-        to bottom,
-        #ffa3ed,
-        #ff77c9
-    );
-    font-family: "Fredoka", sans-serif;
-    text-shadow: #ffffff;
-    margin: 30px auto;
-    padding:40px;
-    border-radius: 25px;
-    align-items:left;
-    box-shadow: 0 0 20px rgba(255, 119, 201, 0.5);
-    transition: 0.3s;
-    color : black;
- 
 }
 
-.leftPanel:hover{
-    transform:translateY(-5px);
-}
-
-
-.leftPanel ul{
-    padding-left: 20px;
-}
-
-.leftPanel li{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-
-.leftPanel:container{
+.about-section{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
-p{
-    text-align: center;
-    font-family:'Fredoka', sans-serif;
-    font-size: 30px;
+.side-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-
-
