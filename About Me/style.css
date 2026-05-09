@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap');
 body {
     margin: 0;
     height: 200vh;
@@ -36,6 +36,12 @@ h1{
     font-size: 50px;
 }
 
+h2{
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+
+}
+
 
 
 .glow-text{
@@ -43,7 +49,7 @@ h1{
     font-size: 50px;
     font-weight: bold;
     text-shadow:
-    0 0 20px #9955a2;
+    0 0 20px #ffd4f1;
 }
 
 .kuromi{
@@ -72,8 +78,46 @@ h1{
     }
 }
 
+.leftPanel{
+    width:40%;
+
+    background:
+    linear-gradient(
+        to bottom,
+        #ffa3ed,
+        #ff77c9
+    );
+    font-family: "Fredoka", sans-serif;
+    text-shadow: #ffffff;
+    margin-left: 30px;
+    padding:40px;
+    display:flex;
+    flex-direction:column;
+    align-items:left;
+    position:relative;
+    border-radius: 20px;
+}
+
 p{
     text-align: center;
     font-family:'Fredoka', sans-serif;
     font-size: 30px;
+}
+
+.skill{
+    background:rgba(255,255,255,0.08);
+
+    padding:12px 15px;
+
+    border-radius:15px;
+
+    margin-bottom:10px;
+
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-3px);
+
+    background:rgba(255, 119, 201, 0.251);
 }
