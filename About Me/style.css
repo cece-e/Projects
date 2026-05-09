@@ -1,5 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap');
+header{
+
+    width: 100%;
+
+    padding: 50px 30px;
+
+    border-radius: 25px;
+
+    background:
+    linear-gradient(
+        to right,
+        rgba(255,255,255,0.9),
+        rgba(255,214,241,0.9)
+    );
+
+    box-shadow:
+    0 0 25px rgba(131,24,174,0.2);
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-pic{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow:
+    0 0 30px rgba(255,182,255,0.7);
+ 
+}
+
+.header-text{
+    text-align: left;
+}
+
+.intro{
+
+    font-size: 24px;
+    color: #5e2b6d;
+    margin-top: 10px;
+}
+
 body {
     margin: 0;
     height: 200vh;
@@ -13,14 +63,26 @@ body {
     background-attachment: fixed;
 }
 .container{
-    width: 95%;
-    background: rgb(255, 255, 255);
-    margin: 20px auto;
-    padding: 15px;
-    border-radius: 20px;
-    outline: 5px solid #9955a2;
-    box-shadow: 0 0 25px rgba(131, 24, 174, 0.519);
-    box-sizing: border-box;
+   width:100%;
+    max-width: 1200px;
+
+    background:
+    linear-gradient(
+        to top,
+        #fdb3dd,
+        #ffd0ec
+    );
+    font-family: "Fredoka", sans-serif;
+    text-shadow: #ffffff;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 25px;
+    align-items:left;
+    color : rgb(0, 0, 0);
+}
+.container:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
 }
 
 header{
@@ -62,7 +124,7 @@ h2{
     font-family: "Fredoka", sans-serif;
     text-shadow: #ffffff;
     margin: 30px auto;
-    padding:40px;
+    padding: 35px;
     border-radius: 25px;
     align-items:left;
     color : rgb(0, 0, 0);
