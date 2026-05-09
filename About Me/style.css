@@ -79,7 +79,8 @@ h2{
 }
 
 .leftPanel{
-    width:40%;
+    width:100%;
+    max-width: 500px;
 
     background:
     linear-gradient(
@@ -89,13 +90,35 @@ h2{
     );
     font-family: "Fredoka", sans-serif;
     text-shadow: #ffffff;
-    margin-left: 30px;
+    margin: 30px auto;
     padding:40px;
-    display:flex;
-    flex-direction:column;
+    border-radius: 25px;
     align-items:left;
-    position:relative;
-    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 119, 201, 0.5);
+    transition: 0.3s;
+    color : black;
+ 
+}
+
+.leftPanel:hover{
+    transform:translateY(-5px);
+}
+
+
+.leftPanel ul{
+    padding-left: 20px;
+}
+
+.leftPanel li{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.leftPanel:container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
 p{
@@ -104,20 +127,4 @@ p{
     font-size: 30px;
 }
 
-.skill{
-    background:rgba(255,255,255,0.08);
 
-    padding:12px 15px;
-
-    border-radius:15px;
-
-    margin-bottom:10px;
-
-    transition:0.3s;
-}
-
-.skill:hover{
-    transform:translateY(-3px);
-
-    background:rgba(255, 119, 201, 0.251);
-}
