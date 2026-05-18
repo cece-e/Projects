@@ -157,7 +157,7 @@ p{
     margin: 10px auto;
     width: 350px;
     filter:
-    drop-shadow(0 0 15px rgba(30,28,28,0.4));
+    drop-shadow(0 0 15px rgba(78, 37, 119, 0.4));
 }
 
 .kuromi{
@@ -167,7 +167,7 @@ p{
     bottom: 0;
     width: 220px;
     z-index: 1000;
-    filter: drop-shadow(0 0 15px rgba(30, 28, 28, 0.5));
+    filter: drop-shadow(0 0 15px rgba(113, 54, 147, 0.5));
 
     animation: float 4s ease-in-out infinite;
 }
@@ -191,8 +191,7 @@ p{
     width: 400px;
     border-radius: 20px;
     border: 8px solid white;
-    box-shadow:
-    0 0 20px rgba(255,255,255,0.4);
+    box-shadow: 0 0 30px rgba(80, 46, 86, 0.8);
 
 }
 
@@ -209,4 +208,118 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+.Panel{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+details{
+    width: 100%;
+    max-width: 500px;
+    background:
+    linear-gradient(
+        to top,
+        #f9c8ff,
+        #ffd0ec
+    );
+    font-family: "Fredoka", sans-serif;
+    text-shadow: #ffffff;
+    margin: 30px;
+    padding: 35px;
+    border-radius: 25px;
+    align-items:left;
+    color : rgb(0, 0, 0);
+    box-shadow: 0 0 30px rgba(80, 46, 86, 0.8);
+}
+
+details:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+}
+
+summary{
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    list-style: None;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary{
+    color: #462b53;
+    margin: 15px;
+}
+
+details[open] summary::after{
+    content: "▲";
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.languages{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.lang-img{
+    background: rgba(255,255,255,0.4);
+    padding: 15px;
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.lang-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
+}
+
+.lang-img img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.lang-img p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #462b53;
+}
+
+/* For gifs */
+.gif-img{
+    background: rgba(246, 234, 255, 0.4);
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.gif-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
+}
+
+.gif-img img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.gif-img p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #462b53;
 }
