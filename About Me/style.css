@@ -211,13 +211,15 @@ p{
 }
 
 .Panel{
+    flex: 1;
     display: flex;
-    align-items: center;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 details{
     width: 100%;
+    display: block;
     max-width: 500px;
     background:
     linear-gradient(
@@ -238,6 +240,10 @@ details{
 details:hover{
     transform:translateY(-5px);
     box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+}
+
+.Panel details{
+    margin-bottom: 20px;
 }
 
 summary{
@@ -263,10 +269,12 @@ details[open] summary::after{
     margin-left: 10px;
 }
 
+/* For Languages */
+
 .languages{
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .lang-img{
@@ -322,4 +330,62 @@ details[open] summary::after{
     font-size: 18px;
     font-weight: bold;
     color: #462b53;
+}
+
+.skills-goals-section{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+}
+
+.rightPanel{
+    flex: 1;
+    max-width: 600px;
+    background:
+    linear-gradient(
+        to top,
+        #fdb3dd,
+        #ffd0ec
+    );
+    font-family: "Fredoka", sans-serif;
+    text-shadow: #ffffff;
+    margin: 30px auto;
+    padding: 35px;
+    border-radius: 25px;
+    align-items:left;
+    color : rgb(0, 0, 0);
+}
+
+.left-side{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.goals{
+    align-self:right;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rightPanel:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+}
+
+.main-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.goals li{
+    background: rgba(255,255,255,0.4);
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
