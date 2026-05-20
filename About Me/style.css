@@ -283,7 +283,7 @@ details[open] summary::after{
     background: rgba(255,255,255,0.4);
     padding: 15px;
     border-radius: 20px;
-    width: 120px;
+    width: 100px;
     text-align: center;
     transition: 0.3s;
 }
@@ -311,7 +311,7 @@ details[open] summary::after{
     background: rgba(246, 234, 255, 0.4);
     padding: 20px;
     border-radius: 20px;
-    width: 200px;
+    width: 175px;
     text-align: center;
     transition: 0.3s;
 }
@@ -370,9 +370,9 @@ details[open] summary::after{
 
 .goals{
     align-self:right;
-    align-items: center;
+    align-items: center auto;
     flex-direction: column;
-    gap: 20px;
+    margin: 20px auto;
 }
 
 .rightPanel:hover{
@@ -393,6 +393,7 @@ details[open] summary::after{
     padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin: 15px;
 }
 
 .goals li:hover{
@@ -401,11 +402,12 @@ details[open] summary::after{
 }
 
 .goals img{
-    width: 493px;
-    height: 277px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     border:#ffffff solid 10px;
     border-radius: 15px;
-    object-fit: contain;
-    margin: 15px;
+    margin: 15px auto;
+    align-self: center;
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.836);
 }
