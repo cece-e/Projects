@@ -386,8 +386,6 @@ details[open] summary::after{
     flex-direction: row;
     gap: 10px;
     padding: 40px;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .goals li{
