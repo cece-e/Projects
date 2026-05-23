@@ -387,7 +387,8 @@ details[open] summary::after {
 .goals li {
     margin: 15px;
     padding: 10px;
-
+    font-size: 24px;
+    font-family: "Fredoka", sans-serif;
     border-radius: 12px;
 
     background: rgba(255,255,255,0.4);
