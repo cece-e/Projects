@@ -483,7 +483,7 @@ details[open] summary::after {
     margin-top: 30px;
 }
 
-
+.cat-section img,
 .games-section img {
     margin: 10px;
 
@@ -515,6 +515,23 @@ details[open] summary::after {
     .main-layout {
         padding: 20px;
     }
+}
+
+.cat-section,
+.games-section {
+     background:
+        linear-gradient(
+            to top,
+            #da30b22f,
+            #ffd0ec47
+        );
+    backdrop-filter:blur(10px);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .games-section img:hover,
