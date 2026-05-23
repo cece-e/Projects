@@ -1,26 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap');
-header{
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&family=Poppins:wght@300;400;500;600&display=swap");
 
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(255, 252, 254, 0.515),
+            rgba(131, 24, 174, 0.519)
+        ),
+        url("https://wallpaperaccess.com/full/8575316.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+header {
     width: 100%;
 
     padding: 50px 30px;
+    box-sizing: border-box;
 
     border-radius: 25px;
 
     background:
-    linear-gradient(
-        to right,
-        rgba(255,255,255,0.9),
-        rgba(255,214,241,0.9)
-    );
+        linear-gradient(
+            to right,
+            rgba(255,255,255,0.9),
+            rgba(255,214,241,0.9)
+        );
 
-    box-shadow:
-    0 0 25px rgba(131,24,174,0.2);
-
+    box-shadow: 0 0 25px rgba(131,24,174,0.2);
 }
 
-.header-content{
+
+.header-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,382 +51,482 @@ header{
     flex-wrap: wrap;
 }
 
-.profile-pic{
+
+.profile-pic {
     width: 220px;
     height: 220px;
+
     object-fit: cover;
+
     border-radius: 50%;
     border: 8px solid white;
-    box-shadow:
-    0 0 30px rgba(255,182,255,0.7);
- 
+
+    box-shadow: 0 0 30px rgba(255,182,255,0.7);
 }
 
-.header-text{
+
+.header-text {
     text-align: center;
 }
 
-.intro{
 
+.glow-text {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+
+    text-shadow: 0 0 20px #ffd4f1;
+}
+
+
+.intro {
     font-size: 24px;
     color: #5e2b6d;
     margin-top: 10px;
 }
 
-body {
-    margin: 0;
-    height: 200vh;
-    background:
-    linear-gradient(
-    rgba(255, 252, 254, 0.515),
-    rgba(131, 24, 174, 0.519)
-    ),url("https://wallpaperaccess.com/full/8575316.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+
+h1,
+h2,
+h3,
+p {
+    font-family: "Fredoka", sans-serif;
 }
-.container{
-   width:100%;
+
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+
+.container,
+.leftPanel,
+details,
+.rightPanel {
+    transition: 0.3s;
+}
+
+
+.container:hover,
+.leftPanel:hover,
+details:hover,
+.rightPanel:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+}
+
+
+.container {
+    width: 100%;
     max-width: 1200px;
 
-    background:
-    linear-gradient(
-        to top,
-        #fdb3dd,
-        #ffd0ec
-    );
-    font-family: "Fredoka", sans-serif;
-    text-shadow: #ffffff;
     margin: 30px auto;
     padding: 40px;
-    border-radius: 25px;
-    align-items:left;
-    color : rgb(0, 0, 0);
-}
-.container:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
-}
-
-header{
-    width: 100%;
-    background-color: white;
-    padding: 100px;
     box-sizing: border-box;
-}
 
-h1{
-    text-align: center;
-    font-family:'Fredoka', sans-serif;
-    font-size: 50px;
-}
-
-h2{
-    font-family: 'Fredoka', sans-serif;
-    text-align: center;
-}
-
-.glow-text{
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow:
-    0 0 20px #ffd4f1;
-}
-
-.leftPanel{
-    width:100%;
-    max-width: 500px;
+    border-radius: 25px;
 
     background:
-    linear-gradient(
-        to top,
-        #fdb3dd,
-        #ffd0ec
-    );
-    font-family: "Fredoka", sans-serif;
-    text-shadow: #ffffff;
+        linear-gradient(
+            to top,
+            #fdb3dd,
+            #ffd0ec
+        );
+}
+
+
+.container p {
+    font-size: 30px;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.gif {
+    width: 400px;
+
+    border-radius: 20px;
+    border: 8px solid white;
+
+    box-shadow: 0 0 30px rgba(80, 46, 86, 0.8);
+}
+
+
+.cinna {
+    width: 350px;
+
+    filter: drop-shadow(0 0 15px rgba(78, 37, 119, 0.4));
+}
+
+
+.leftPanel {
+    width: 100%;
+    max-width: 500px;
+
     margin: 30px auto;
     padding: 35px;
+    box-sizing: border-box;
+
     border-radius: 25px;
-    align-items:left;
-    color : rgb(0, 0, 0);
 
+    background:
+        linear-gradient(
+            to top,
+            #fdb3dd,
+            #ffd0ec
+        );
+
+    font-family: "Fredoka", sans-serif;
 }
 
-.leftPanel:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
-}
 
-
-.leftPanel ul{
-    padding-left: 20px;
-}
-
-.leftPanel li{
+.leftPanel li {
     margin-bottom: 20px;
     font-size: 20px;
 }
 
 
-p{
-    text-align: center;
-    font-family:'Fredoka', sans-serif;
-    font-size: 30px;
-}
-
-.cinna{
-    margin: 10px auto;
-    width: 350px;
-    filter:
-    drop-shadow(0 0 15px rgba(78, 37, 119, 0.4));
-}
-
-.kuromi{
-    background-blend-mode:overlay;
+.kuromi {
     position: fixed;
     right: 20px;
     bottom: 0;
+
     width: 220px;
+
     z-index: 1000;
+    pointer-events: none;
+
     filter: drop-shadow(0 0 15px rgba(113, 54, 147, 0.5));
 
     animation: float 4s ease-in-out infinite;
 }
 
-@keyframes float{
-    5%{
+
+@keyframes float {
+
+    0% {
         transform: translateY(0px);
     }
 
-    50%{
+    50% {
         transform: translateY(-15px);
     }
 
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
 
-.gif{
-    margin: 20px auto;
-    width: 400px;
-    border-radius: 20px;
-    border: 8px solid white;
-    box-shadow: 0 0 30px rgba(80, 46, 86, 0.8);
 
-}
-
-.about-section{
+.main-layout {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
     flex-wrap: wrap;
-}
-
-.side-images{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
+
+    padding: 40px;
 }
 
-.Panel{
+
+.Panel {
     flex: 1;
+}
+
+
+.left-side {
     display: flex;
     flex-direction: column;
-    align-items: left;
     gap: 20px;
 }
 
-details{
+
+.details,
+details {
     width: 100%;
-    display: block;
     max-width: 450px;
-    background:
-    linear-gradient(
-        to top,
-        #f9c8ff,
-        #ffd0ec
-    );
-    font-family: "Fredoka", sans-serif;
-    text-shadow: #ffffff;
-    margin: 30px;
+
+    margin: 0;
     padding: 35px;
+    box-sizing: border-box;
+
     border-radius: 25px;
-    align-items:left;
-    color : rgb(0, 0, 0);
+
+    background:
+        linear-gradient(
+            to top,
+            #f9c8ff,
+            #ffd0ec
+        );
+
     box-shadow: 0 0 30px rgba(80, 46, 86, 0.8);
 }
 
-details:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
-}
 
-.Panel details{
-    margin-bottom: 20px;
-}
-
-summary{
+summary {
     font-size: 24px;
     font-weight: bold;
+    font-family: "Fredoka", sans-serif;
     cursor: pointer;
-    margin-bottom: 20px;
-    list-style: None;
+    list-style: none;
 }
+
 
 summary::-webkit-details-marker {
     display: none;
 }
 
-details[open] summary{
-    color: #462b53;
-    margin: 15px;
+
+details[open] summary::after {
+    content: " ▲";
+    font-size: 14px;
 }
 
-details[open] summary::after{
-    content: "▲";
-    font-size: 15px;
-    margin-left: 10px;
-}
 
-/* For Languages */
-
-.languages{
+.languages {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
 
-.lang-img{
-    background: rgba(255,255,255,0.4);
-    padding: 15px;
-    border-radius: 20px;
-    width: 100px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.lang-img:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
-}
-
-.lang-img img{
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.lang-img p{
-    font-size: 18px;
-    font-weight: bold;
-    color: #462b53;
-}
-
-/* For gifs */
-.gif-img{
-    background: rgba(246, 234, 255, 0.4);
-    padding: 20px;
-    border-radius: 20px;
-    width: 175px;
-    text-align: center;
-    transition: 0.3s;
-}
-
-.gif-img:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
-}
-
-.gif-img img{
-    width: 120px;
-    height: 120px;
-    object-fit: contain;
-    margin-bottom: 10px;
-}
-
-.gif-img p{
-    font-size: 18px;
-    font-weight: bold;
-    color: #462b53;
-}
-
-.skills-goals-section{
-    display: flex;
-    gap: 30px;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 20px;
-}
-
-.rightPanel, button{
-    flex: 1;
-    max-width: 700px;
-    background:
-    linear-gradient(
-        to bottom,
-        #fdb3dd4e,
-        #9c26943d
-    );
-    backdrop-filter: blur(15px);
-    font-family: "Fredoka", sans-serif;
-    text-shadow: #ffffff;
-    margin: 30px;
-    padding: 35px;
-    border-radius: 25px;
-    box-shadow:0 0 15px rgba(69, 36, 85, 0.522);
-
-}
-
-.left-side{
-    flex-direction: column;
     margin-top: 20px;
 }
 
-.goals{
-    align-self:right;
-    align-items: center auto;
-    flex-direction: column;
-    margin: 20px auto;
+
+.lang-img,
+.gif-img {
+    text-align: center;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
 }
 
-.rightPanel:hover{
-    transform:translateY(-5px);
-    box-shadow: 0 0 30px rgba(247, 205, 255, 0.8);
+
+.lang-img:hover,
+.gif-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
 }
 
-.main-layout {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
-    padding: 40px;
-}
 
-.goals li{
-    background: rgba(255,255,255,0.4);
+.lang-img {
+    width: 90px;
     padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    margin: 15px;
+
+    background: rgba(255,255,255,0.4);
 }
 
-.goals li:hover{
+
+.lang-img img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+}
+
+
+.lang-img p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #462b53;
+}
+
+
+.gif-img {
+    width: 145px;
+    padding: 10px;
+
+    background: rgba(246, 234, 255, 0.4);
+}
+
+
+.gif-img img {
+    width: 100px;
+    height: 120px;
+
+    object-fit: contain;
+}
+
+
+.gif-img p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #462b53;
+}
+
+
+.rightPanel {
+    flex: 1;
+    max-width: 700px;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #fdb3dd4e,
+            #9c26943d
+        );
+
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 15px rgba(69, 36, 85, 0.522);
+}
+
+
+.goals li {
+    margin: 15px;
+    padding: 10px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.4);
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+    transition: 0.3s;
+}
+
+
+.goals li:hover {
     transform: translateY(-3px);
     box-shadow: 0 0 15px rgba(255,182,255,0.8);
 }
 
-.goals img{
+
+.goals img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border:#ffffff solid 10px;
+
+    border: 10px solid white;
     border-radius: 15px;
+
     margin: 15px auto;
+
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.836);
+}
+
+
+.why-btn {
+    width:max-content;
+
+    padding: 15px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    cursor: pointer;
+
+    background: #fdb3ddc6;
+
+    color: #4c1f38;
+
+    font-family: "Fredoka", sans-serif;
+
+    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
+
+    transition: 0.3s;
+}
+
+
+.why-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+
+.why-container-content {
+    width: 420px;
+    max-width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    max-height: 0;
+    overflow: hidden;
+
+    margin-top: 20px;
+    padding: 0 15px;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            to top,
+            #956ca97f,
+            #fdb3dd7f
+        );
+
+    transition:
+        max-height 0.6s ease,
+        padding 0.5s ease;
+}
+
+
+.why-container-content p {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.cat-section,
+.games-section {
+    margin-top: 30px;
+}
+
+
+.games-section img {
+    margin: 10px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.5);
+}
+
+
+@media (max-width: 768px) {
+
+    .glow-text {
+        font-size: 35px;
+    }
+
+    .profile-pic {
+        width: 170px;
+        height: 170px;
+    }
+
+    .gif {
+        width: 100%;
+    }
+
+    .kuromi {
+        width: 140px;
+    }
+
+    .main-layout {
+        padding: 20px;
+    }
+}
+
+.games-section img:hover,
+.cat-section img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(255, 182, 255, 0.8);
+}
+
+
+.games-section img,
+.cat-section img {
+    width: 250px;
+    padding: 15px;
+
+    background: rgba(255,255,255,0.4);
 }
