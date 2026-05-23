@@ -493,7 +493,7 @@ details[open] summary::after {
 
 .cat-img img {
     width: 100px;
-    height: 120px;
+    height: 100px;
 
     object-fit: contain;
 }
