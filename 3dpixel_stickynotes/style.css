@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body {
+    background:
+        linear-gradient(
+            rgba(20, 20, 50, 0.5),
+            rgba(240, 104, 255, 0.368),
+            rgba(219, 85, 159, 0.368)
+        ),
+        url("https://i.pinimg.com/736x/69/cc/39/69cc395a222122a3bd19220901c17a86.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: galaxy 5s ease infinite;
+}
+
+.header{
+    background: rgba(255, 255, 255, 0.488);
+    border-radius : 10px;
+    border: 3px solid black;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 15px;
+    padding : 30px;
+}
+
+.header h1{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+        text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+    margin : 0;
+}
+
+@keyframes galaxy{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 80% 45%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.floating {
+    height: 40px;
+    width: 40px;
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+button{
+    background: rgba(228, 161, 255, 0.488);
+    border-radius : 10px;
+    border: 3px solid black;
+    backdrop-filter: blur(5px);
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding : 20px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+        text-shadow:
+        -2px -2px 0 #000,
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000;
+}
+
+button:hover{
+    background: rgba(228, 161, 255, 0.889);
+    transform : scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: #ffffff;
+}
